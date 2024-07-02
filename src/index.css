@@ -1,13 +1,184 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing : border-box;
+  margin : 0;
+  padding : 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.home-nav {
+  height: 100px;
+  background-color: rgb(0, 63, 111);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 3px 15px 0 rgb(0, 0, 0.1);
+}
+
+.home-nav-container {
+  margin: 0 20px 0 0;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items : center;
+  
+}
+
+.home-img {
+  height:100px;
+}
+
+.home-btn {
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #e8e5e5;
+}
+
+.home-btn:active {
+  color: #fff;
+  background-color: #8a8a8a;
+}
+
+.home-span > a{
+  color: #ffffff;
+}
+
+.home-span > a:active {
+  color :#81d3ff;
+}
+
+.cards-container {
+  height: 550px;
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+}
+
+.main-description {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: space-between;
+  justify-content: space-between;
+
+}
+
+.text-container {
+  width: 45vw;
+  margin: 0 auto;
+  margin-right: 20px;
+  display: flex;  
+  justify-content: center;
+  align-items: center; 
+  transition: width 0.5s ease-in-out;
+  text-align: center;
+}
+
+.home-main-img {
+  width: 45vw;
+  transition: width 0.5s ease-in-out;
+  margin-left: 20px;
+}
+
+.text-container:hover {
+  transition-delay: 0.3s;
+  width: 50vw;
+  box-shadow :-2px 0px 6px 0px rgb(0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.home-main-img:hover {
+  transition-delay: 0.3s;
+  width: 50vw;
+  box-shadow :2px 0px 6px 0px rgb(0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.text-container > p {
+  width: 300px;
+  font-weight: 800;
+}
+
+.line {
+  border-top: 2px solid #000000;
+  margin: 20px 0;
+}
+
+
+.main-btn {
+  height :200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.main-btn > button {
+  padding:10px 0;
+  width: 400px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  box-shadow: 1px 3px 2px 0 rgb(0, 0, 0.1);
+} 
+
+.main-btn > button:active {
+  color: #fff;
+  background-color: #2ceb45;
+  box-shadow: none;
+}
+
+.second-main-img {
+  margin-left: 0;
+  margin-right: 20px ;
+}
+
+.second-text-container {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+.contact-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-card {
+  height: 400px;
+  width: 60%;
+  padding-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border:none;
+  position: relative;
+  box-shadow: 0 4px 5px 1px rgb(0, 0, 0.1);
+} 
+
+.outer-circle {
+  height: 100%;
+  width: 50%;
+  border: 10px solid rgb(0, 63, 111);
+  border-right: none;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.inner-circle {
+  height: 90%;
+  width: 90%;
+  background-color: rgb(0, 63, 111);
+  border-top-left-radius: 45%;
+  border-bottom-left-radius: 50%;
+  position: absolute;
+  right: 0;
+}
+
+.mail-text {
+  color: #8a8a8a;
+  text-decoration: underline;
 }
