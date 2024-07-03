@@ -74,7 +74,7 @@
 }
 
 .home-main-img {
-  width: 45vw;
+  width: 50%;
   transition: width 0.5s ease-in-out;
   margin-left: 20px;
 }
@@ -88,7 +88,7 @@
 
 .home-main-img:hover {
   transition-delay: 0.3s;
-  width: 50vw;
+  width: 55%;
   box-shadow :2px 0px 6px 0px rgb(0, 0, 0.1);
   border-radius: 5px;
 }
