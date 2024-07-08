@@ -16,11 +16,10 @@
 
 .home-nav-container {
   margin: 0 20px 0 0;
-  width: 300px;
+  min-width: 300px;
   display: flex;
   justify-content: space-between;
-  align-items : center;
-  
+  align-items : center;  
 }
 
 .home-img {
@@ -181,4 +180,212 @@
 .mail-text {
   color: #8a8a8a;
   text-decoration: underline;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #132b40;
+}
+
+.login-card {
+  height: 500px;
+  width: 400px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.login-card > div {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.label {
+  width: 30%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: larger;
+  font-weight: 900;
+}
+
+.input {
+  padding: 5px;
+  width: 70%;
+  margin-left: 10px;
+  border: none;
+  box-shadow: 1px 1px 2px 0 rgb(0, 0, 0.1);
+  border-radius: 10px;
+} 
+
+.input:focus {
+  padding: 5px 10px;
+  outline: none;
+}
+
+.login-card > button {
+  padding: 10px 30px;
+  border:none ;
+  border-radius: 10px;
+}
+
+.login-card > button:active {
+  background-color: #b8b6b6;
+  color: #fff;
+}
+
+.student-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.class-container {
+  height: 300px;
+  background: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.card-img > img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-desc {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: space-around; */
+}
+.card-desc > h3, p {
+  padding : 10px;
+}
+
+.card-btn {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.enroll-btn:hover {
+  background-color: #0056b3;
+}
+
+.cancel-btn {
+  width: 100%;
+  background: rgb(255, 68, 68);
+}
+
+.cancel-btn:hover {
+  background: rgb(161, 35, 35);
+}
+
+.enrolled-btn {
+  background-color: #1a8929;
+}
+
+.enrolled-btn:hover {
+  background-color: #20b534;
+}
+
+
+.main-module {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+.main-module > h1 {
+  margin-top: 25px;
+}
+
+.modules-container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.module-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  width: 70%;
+  height: 100px;
+  border: 1px solid #000;
+  background-color: #132b40;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 1px 2px 0 0 rgb(0, 0, 0.1);
+}
+
+.module-card:hover {
+  background-color: #3889d0 ;
+  box-shadow: inset 5px 7px 10px 0 rgb(0, 0, 0.1);
+}
+
+.video-container {
+  width: 100%;
+  margin-left: 20px;
+  margin-top: 120px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+video {
+  margin-top: 1x;
+  width: 50%;
+  height: auto;
+  border-radius: 8px; /* Optional: for rounded corners */
+  padding: 20px;
+  border: 2px solid #000;
+
+}
+
+.video-nav-container {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.video-btn {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.video-nav-title {
+  color: #fff;
+}
+
+.module-nav-container {
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items : center;
 }
